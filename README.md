@@ -1,1 +1,1 @@
-# Foreign-seek-deepfake-audio-detection
+# Foreignsic deepfake-audio-detection
