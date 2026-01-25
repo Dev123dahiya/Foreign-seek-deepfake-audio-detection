@@ -1,5 +1,4 @@
 # Foreignsic deepfake-audio-detection
-Forensic Deepfake Audio Detection
 Python 3.8+
 TensorFlow 2.19+
 License: MIT
@@ -7,7 +6,7 @@ Status: Active
 
 A production-ready deep learning system for detecting synthetic and deepfake audio using Convolutional Neural Networks (CNN) and advanced audio signal processing. This project combines mel-spectrogram feature extraction with deep neural networks to distinguish between genuine human speech and AI-synthesized audio with high accuracy.
 
- Project Overview
+ **Project Overview**
 Forensic Deepfake Audio Detection is an end-to-end machine learning solution designed to combat voice synthesis and audio deepfakes. The system processes raw audio files, extracts multi-dimensional acoustic features, and employs a trained CNN model to classify audio as real or fake with confidence scores.
 
 Key Features
@@ -25,36 +24,36 @@ Comprehensive Visualization: Mel-spectrogram plots and feature analysis dashboar
 
 Error Handling & Logging: Robust exception management and detailed console feedback
 
-📋 Table of Contents
-Project Overview
+📋 **Table of Contents**
+       Project Overview
+       
+       Technical Architecture
+       
+       Installation
+       
+       Usage
+       
+       Project Structure
+       
+       Model Architecture
+       
+       Dataset Requirements
+       
+       Training & Evaluation
+       
+       API Documentation
+       
+       Performance Metrics
+       
+       Troubleshooting
+       
+       Future Enhancements
+       
+       Contributing
+       
+       License
 
-Technical Architecture
-
-Installation
-
-Usage
-
-Project Structure
-
-Model Architecture
-
-Dataset Requirements
-
-Training & Evaluation
-
-API Documentation
-
-Performance Metrics
-
-Troubleshooting
-
-Future Enhancements
-
-Contributing
-
-License
-
-🏗️ Technical Architecture
+**🏗️ Technical Architecture**
 System Components
 text
 ┌─────────────────────────────────────────────────────────────┐
@@ -90,7 +89,7 @@ text
 │  • Upload endpoint: /upload (POST)                          │
 │  • JSON responses with predictions & visualizations         │
 └─────────────────────────────────────────────────────────────┘
-Technology Stack
+**Technology Stack**
 Component	Technology	Version
 Deep Learning	TensorFlow/Keras	2.19.0
 Audio Processing	Librosa	0.11.0
@@ -109,7 +108,7 @@ pip or conda package manager
 
 GPU support (Optional, CUDA 11.8+ for faster training)
 
-Step 1: Clone Repository
+Step 1: **Clone Repository**
 bash
 git clone https://github.com/yourusername/forensic-deepfake-audio-detection.git
 cd forensic-deepfake-audio-detection
@@ -141,7 +140,7 @@ bash
 wget https://github.com/yourusername/forensic-deepfake-audio-detection/releases/download/v1.0/deepfake_detection_model.h5
 mv deepfake_detection_model.h5 models/
 mv deepfake_detection_model_encoder.pkl models/
-🚀 Usage
+**🚀 Usage**
 1. Training the Model
 Prepare Dataset
 Organize your audio files in the following structure:
@@ -193,7 +192,7 @@ Evaluating model...
 Test Accuracy: 0.9487
 Test Loss: 0.1245
 
-Classification Report:
+**Classification Report:**
               precision    recall  f1-score   support
         fake       0.95      0.94      0.95        19
         real       0.95      0.96      0.95        20
